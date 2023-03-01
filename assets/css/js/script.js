@@ -22,13 +22,13 @@ const validate = (form) => {
     }
   
     if (form.age.value.value >= 12) {
-      errors.push("Du skal være over 12 år for at måtte fortsætte\n");
-    } 
+        return true;
+      } 
     else {
       (form.age.value.value <= 12) 
       {
-        errors.push("prøv igen\n");
-      }
+        errors.push("Du skal være over 12 år for at måtte fortsætte\n");
+          }
   }
   
     if (errors.length > 0) {
